@@ -86,9 +86,9 @@ function subnetChecker() {
 
     console.log("Total IP addresses: " + totalIPs);
     console.log("Usable IP addresses: " + usableIPs);
-
+    console.log("Devices required: " + devices);
     if (devices <= usableIPs) {
-        console.log("Subnet is sufficient.");
+        console.log("Subnet is sufficient for " + devices + " devices.");
         console.log("Unused IP addresses: " + (usableIPs - devices));
     } else {
         console.log("Subnet is NOT sufficient.");
